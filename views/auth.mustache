@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+{{>head}}
+
+<body>
+	<div class="container" >
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Register</h2>
+                <form action="/user/register" method="post">
+                    <input class="form-control" name="username" placeholder="username" type="text">
+                    <input class="form-control" name="password" placeholder="password" type="password">
+                    <input type="submit" class="btn btn-success" name="Register" value="Register">
+                </form>
+                <br />
+                <h2>Login</h2>
+                <form action="/user/login" method="post">
+                    <input class="form-control" name="username" placeholder="username" type="text">
+                    <input class="form-control" name="password" placeholder="password" type="password">
+                    <input type="submit" class="btn btn-success" name="Login" value="Login">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+	<!-- Turbo library imports: jQuery, Turbo CDN, sample app.js -->
+	<script type="text/javascript" src="/dist/js/vendor.min.js"></script>
+	<script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/turbo.min.js"></script>
+</body>
+</html>
